@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<p id="text"></p>
+		<script type="text/javascript">
+
+		// add new fruit to end of the array, sort the fruits and add 'with'
+			var fruits = ['apple', 'orange', 'kiwi'];
+			fruits.push(prompt('add more fruit'));
+			fruits.sort();
+			fruits.join(' with ');
+			document.getElementById('text').innerHTML = fruits.join(' with ');
+			
+		</script>
+	</body>
+</html>
