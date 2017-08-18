@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<script type="text/javascript">
+	// student's scores		
+		var grade = [80, 77, 88, 95, 68];
+
+		var gradeAvg = grade[0] + grade[1] + grade[2] + grade[3] + grade [4];
+
+	// finding the average
+		var average = (gradeAvg/(grade.length));
+		console.log(average);
+
+	// finding the letter grade of student's scores
+		
+		var score = prompt("Enter score");
+
+		if(score < 60){
+			console.log("You get an F");
+
+		}else if(score > 60 && score <= 70){
+			console.log("You get a D");
+
+		}else if(score > 70 && score <= 79){
+			console.log("You get a C");
+		
+		}else if(score >79 && score <= 89){
+			console.log("You get a B");
+
+		}else {
+			console.log("You get an A");
+		}
+
+
+	</script>
+	</body>
+</html>
