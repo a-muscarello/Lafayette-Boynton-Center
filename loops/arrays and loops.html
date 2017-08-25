@@ -14,11 +14,16 @@
 		var o = ['th', 'st', 'nd', 'rd'];
 
 		for(var i = 0; i < color.length; i++){
-			if(i < 3){       
+			switch(i){
+				case 0:
+				case 1:
+				case 2:
 				console.log((i+1) + o[i+1] + " choice is " + color[i]);
-			 }else{
-			 	console.log((i+1) + o[0] + " choice is " + color[i]);
-			 }
+				break; 
+				
+				default:
+				console.log((i+1) + o[0] + " choice is " + color[i]);
+			}
 		}
 	</script>
 	</body>
