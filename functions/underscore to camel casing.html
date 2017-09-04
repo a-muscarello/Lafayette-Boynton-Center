@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+	<script type="text/javascript">
+		
+		function underscoreToCamelCase(word){
+			
+			// make word lower case, into an array
+
+			var newWord = word.toLowerCase().split("")
+
+			for(var i = 0; i < newWord.length; i++){
+				if(newWord[i] == "_"){
+
+					var replacer = newWord[i+1].toUpperCase()
+
+					newWord.splice(i, 2, replacer)
+
+				}
+			}
+			return newWord.join("")
+		}
+
+		console.log(underscoreToCamelCase("FOO_BAR_BAZ"));
+
+	</script>
+	</body>
+</html>
